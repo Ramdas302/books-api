@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "books-apis",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.2",
+    "bunyan-rotating-file-stream": "^1.6.3",
+    "crypto": "^1.0.1",
+    "find-my-way": "^2.2.5",
+    "ioredis": "^4.0.0",
+    "js-base64": "^3.6.0",
+    "js-sha512": "^0.8.0",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.22.2",
+    "mongoose": "^5.13.3",
+    "mongoose-autopopulate": "^0.12.2",
+    "mongoose-plugin-autoinc": "^1.1.9",
+    "mongoose-string-query": "^0.2.5",
+    "mongoose-timestamp": "^0.6.0",
+    "nodemon": "^3.0.1",
+    "restify": "^8.5.1",
+    "restify-errors": "^6.1.1",
+    "restify-jwt-community": "^1.0.9",
+    "restify-logger": "^2.0.1",
+    "restify-plugins": "^1.6.0",
+    "rotating-file-stream": "^1.3.9",
+    "validatorjs": "^3.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "ramdas jadhav",
+  "license": "ISC"
+}
