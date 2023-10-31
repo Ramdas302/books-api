@@ -18,7 +18,7 @@ This should give you a basic api at 9999 (If you have not changed the port). Hit
 + Restart the node processs
 + Thats it, as simple as that
 
-### Testing api
+### Testing Api
 + Added json file in project
 + Use Extension Thunder for api testing or postman
 + Added postman json file in project
@@ -29,3 +29,6 @@ This should give you a basic api at 9999 (If you have not changed the port). Hit
 
 ### Github Repository
 + https://github.com/Ramdas302/books-api.git
+
+### Vimeo video link
++ https://vimeo.com/879874280
