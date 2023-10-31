@@ -22,7 +22,7 @@ This should give you a basic api at 9999 (If you have not changed the port). Hit
 + Added json file in project
 + Use Extension Thunder for api testing or postman
 + Added postman json file in project
-+ You can postman for api testing
++ You can use postman for api testing
 
 ### Reference
 + http://restify.com/docs/home/
