@@ -36,7 +36,7 @@ module.exports = function (server, restify) {
         var vStatus = validateRule(req.body[0], {
             "title": "required",
             "author":"required",
-            "summery":"required"
+            "summary":"required"
         });
         if (! vStatus.status) {
             res.send({"status": "error", "errors": vStatus.errors, "msg": "Input Validation Failed"});
@@ -46,7 +46,7 @@ module.exports = function (server, restify) {
         var vStatus = validateRule(req.body, {
             "title": "required",
             "author":"required",
-            "summery":"required"
+            "summary":"required"
         });
         if (! vStatus.status) {
             res.send({"status": "error", "errors": vStatus.errors, "msg": "Input Validation Failed"});
@@ -70,7 +70,7 @@ module.exports = function (server, restify) {
             "_id":"required",
             "title": "required",
             "author":"required",
-            "summery":"required"
+            "summary":"required"
         });
         if (! vStatus.status) {
             res.send({"status": "error", "errors": vStatus.errors, "msg": "Input Validation Failed"});
@@ -81,7 +81,7 @@ module.exports = function (server, restify) {
             "_id":"required",
             "title": "required",
             "author":"required",
-            "summery":"required"
+            "summary":"required"
         });
         if (! vStatus.status) {
             res.send({"status": "error", "errors": vStatus.errors, "msg": "Input Validation Failed"});
