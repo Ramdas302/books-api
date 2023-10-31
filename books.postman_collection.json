@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "76d784ba-635f-4ef4-bde3-61d5594215e6",
+		"name": "browseapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28166245"
+	},
+	"item": [
+		{
+			"name": "addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"title\": \"Charlotte's Web\",\n        \"author\": \"E. B. White\",\n        \"summary\": \"Charlotte's Web is a book of children's literature by American author E. B. White and illustrated by Garth Williams; it was published on October 15, 1952, by Harper & Brothers. The novel tells the story of a livestock pig named Wilbur and his friendship with a barn spider named Charlotte.\"\n    },\n    {\n        \"title\": \"Wuthering Heights\",\n        \"author\": \"Emily Brontë\",\n        \"summary\": \"The ultimate tortured love affair, Wuthering Heights tells the story of Heathcliff and Catherine, two star-crossed lovers who are tragically separated after .\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-book-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book_id\":\"653ffd3d4679b91e4b517bc6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/fetchbook/653ffd3d4679b91e4b517bc6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"fetchbook",
+						"653ffd3d4679b91e4b517bc6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/getBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"getBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-Book-ids",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6540b3e273519a3802fffd4f\",\n    \"title\": \"Wuthering Heights\",\n    \"author\": \"Emily Brontë\",\n    \"summary\": \"The ultimate tortured love affair, Wuthering Heights tells the story of Heathcliff and Catherine, two star-crossed lovers who are tragically separated after .\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/updatebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"updatebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-book-ids",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"_id\": \"6540eb95d393092a4a5723c2\"\n    },\n    {\n        \"_id\": \"6540ebeed393092a4a5723c6\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/deletebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"deletebook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
